@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../font/Norse-Bold.otf);
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.sidebar {
+    background-image: url(../imgs/sidebar.png);
+    flex-grow: 1;
+    width: 60vw;
+    min-width: 350px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-space {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    font-size: 25px;
+}
+
+#logo {
+    width: 5rem;
+    padding: 10px;
+}
+
+#logo-name {
+    text-transform: uppercase;
+    color: white;
+    font-family: Norse-Bold;
+}
+
+.main {
+    display: flex;
+    flex-basis: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 2;
+    background-color: rgb(245, 245, 245);
+}
+
+.form-section, .top-text, .sign-up-section{
+    padding: 0px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-text, .header{
+    font-weight: bold;
+}
+
+.form-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 0px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+    width: 60vw;
+    flex-flow: row wrap;
+    font-size: 1rem;
+}
+
+label {
+    position: relative;
+    width: 1trem;
+    margin: 10px 0px;
+}
+
+.form-question {
+    text-transform: uppercase;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:focus{
+    border: 2px solid blue;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .5);
+    outline: none;
+}
+
+input:invalid:focus {
+    border: 2px solid red;
+}
+
+input:valid:focus {
+    border: 2px solid green;
+}
+
+#create-account {
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .5);
+}
+
+#create-account:active {
+    transform: translateY(5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+#create-account:hover {
+    background-color: rgb(20, 120, 20);
+}
+
+a {
+    text-decoration: none;
+    color: forestgreen;
+}
